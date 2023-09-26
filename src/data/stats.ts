@@ -12,22 +12,22 @@ export interface Stat {
 export const stats: Stat[] = [
   {
     Icon: SiGooglescholar,
-    title: "Success Stories",
-    value: "3,000",
+    title: "Students Trained",
+    value: "3,000+",
   },
   {
     Icon: FaCalendarDay,
-    title: "Success Tutors",
-    value: "300",
+    title: "Trusted Tutors",
+    value: "30",
   },
   {
     Icon: FaCalendarDay,
     title: "Schedules",
-    value: "1,000",
+    value: "9000",
   },
   {
     Icon: BiBook,
     title: "Courses",
-    value: "587",
+    value: "18",
   },
 ];

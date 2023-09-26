@@ -1,14 +1,9 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
-import CourseSlider from "@/components/CourseSlider";
-import CourseTitleCard from "@/components/CourseTitleCard";
 import Courses from "@/components/Courses";
 import CoursesTitleSection from "@/components/CoursesTitleSection";
 import Footer from "@/components/Footer";
-import FooterLink from "@/components/FooterLink";
-import FooterLinkList from "@/components/FooterLinkList";
 import Header from "@/components/Header";
-import Heading from "@/components/Heading";
 import Navbar from "@/components/Navbar";
 import Stats from "@/components/Stats";
 import { Metadata, NextPage } from "next";
@@ -27,6 +22,7 @@ const Home: NextPage = () => {
       <Banner />
       <About />
       <Stats />
+      {/* <About /> */}
       <Courses />
       <CoursesTitleSection />
       <div className="py-12 bg-primaryColor w-full h-56"></div>

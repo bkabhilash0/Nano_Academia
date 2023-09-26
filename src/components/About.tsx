@@ -11,33 +11,35 @@ const About = () => {
       <div className="w-full max-w-screen-xl mx-auto md:grid md:grid-cols-2 md:gap-x-10">
         <div className="relative h-full">
           <Image
-            src={"/images/about.webp"}
+            src={"/images/nano_logo.png"}
             fill
             alt="About"
-            objectFit="cover"
+            className="object-contain"
           />
         </div>
         <div className="flex flex-col gap-y-2 py-10 lg:py-20 xl:py-24">
-          <Subtitle text="Learn Anything" />
-          <Heading text="Benefits About Online Learning Expertise" />
+          <Subtitle text="Nano Academia" />
+          <Heading
+            text="Benefits About Courses At Nano Academia"
+          />
           <ul className="rounded-sm shadow-sm list-none md:flex md:flex-col md:gap-y-2 lg:gap-y-4 lg:mt-3">
             <AboutCard
               Icon={RiBook3Line}
-              title="Online Courses"
-              desc="Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts."
+              title="Research Oriented Learning"
+              desc="Our courses are mainy focused on research oniented practical 
+              outcome based learning for students."
             />
             <AboutCard
               Icon={RiBook3Line}
-              title="Online Courses"
-              desc="Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts."
+              title="Earn a Certificate"
+              desc="Earn a valid certification approved by various certifying partners
+              at the successful completion of each course."
             />
             <AboutCard
               Icon={RiBook3Line}
-              title="Online Courses"
-              desc="Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts."
+              title="Learn from Experts"
+              desc="All our tutors & trainers are well qualified techers, academicians
+              and researchers."
             />
           </ul>
         </div>

@@ -3,6 +3,7 @@
 import TinySlider, { TinySliderSettings } from "tiny-slider-react";
 import "tiny-slider/dist/tiny-slider.css";
 import CourseCard from "./CourseCard";
+import { sliderData } from "@/data/courses";
 
 const settings: TinySliderSettings = {
   lazyload: true,
@@ -29,18 +30,11 @@ const settings: TinySliderSettings = {
 const CourseSlider = () => {
   return (
     <TinySlider settings={settings}>
-      <div key={1} style={{ position: "relative" }}>
-        <CourseCard />
-      </div>
-      <div key={2} style={{ position: "relative" }}>
-        <CourseCard />
-      </div>
-      <div key={3} style={{ position: "relative" }}>
-        <CourseCard />
-      </div>
-      <div key={4} style={{ position: "relative" }}>
-        <CourseCard />
-      </div>
+      {sliderData.map((data) => (
+        <div key={data.title} style={{ position: "relative" }}>
+          <CourseCard {...data}/>
+        </div>
+      ))}
     </TinySlider>
   );
 };

@@ -3,6 +3,12 @@ export interface Course {
   caption: string;
 }
 
+export interface CourseSliderData {
+  title: string;
+  author: string;
+  duration: string;
+}
+
 export const courses: Course[] = [
   {
     title: "UI/UX Design",
@@ -51,5 +57,26 @@ export const courses: Course[] = [
   {
     title: "Web Management",
     caption: "25 Courses",
+  },
+];
+
+export const sliderData: CourseSliderData[] = [
+  {
+    title:
+      "Nano Science Intermediate Level-1 for school students (Offline School Certificate Program) ",
+    author: "Nano Academia",
+    duration: "9 Sessions",
+  },
+  {
+    title:
+      "Nanotechnology & Entrepreneurship for Doctors (Offline MBBS Students Program)",
+    author: "G.S HIKKU",
+    duration: "9 Sessions/ 3 Days",
+  },
+  {
+    title:
+      "Nanotechnology cum Entrepreneurship for Science & Management Studies (Offline Hybrid program)",
+    author: "Nano Academia",
+    duration: "9 Sessions",
   },
 ];
